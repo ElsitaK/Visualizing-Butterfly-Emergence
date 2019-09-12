@@ -9,7 +9,7 @@ Extracting First Emergence Date
 Random Forest has predicted daily butterfly presence and absence for 20 General Circulation Models (GCMs) paramaterized by the RCP 8.5 emissions scenario (aka the "business as usual scenario"). These are collected in the file "Output.All.PresenceAbsences.RCP8.5.csv" with each column representing 1 GCM. Here we extract the first date of butterfly emergence for each year.
 
 ``` r
-setwd('~/Documents/NCSU/Machine Learning CH4/MACA RCP8.5 A2')
+setwd('~/Visualizing-Butterfly-Emergence')
 
 allData <- read.csv(file="Output.ALL.PresenceAbsence.RCP8.5.csv")
 
@@ -71,7 +71,7 @@ emerge %>% tidyr::gather("id", "Ordinal.Date", 2:21) %>%
   facet_wrap(~id)
 ```
 
-![](README_files/figure-markdown_github/viz1-1.png)
+![](README_figs/viz1-1.png)
 
 Mean Emergence
 --------------
@@ -104,7 +104,7 @@ theme(legend.position="none") +
 labs(y="Ordinal Date of First Emergence")
 ```
 
-![](README_files/figure-markdown_github/viz2-1.png)
+![](README_figs/viz2-1.png)
 
 ``` r
 #another way to visualize
@@ -115,4 +115,4 @@ ggplot(emerge, aes(Year)) +
   theme_classic()
 ```
 
-![](README_files/figure-markdown_github/viz2-2.png)
+![](README_figs/viz2-2.png)
