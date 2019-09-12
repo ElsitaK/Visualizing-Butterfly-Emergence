@@ -22,7 +22,7 @@ Random Forest has predicted daily butterfly presence and absence for 20 General 
 
 
 ```{r predictions.all.GCMs, warning=FALSE}
-setwd('~/Documents/NCSU/Machine Learning CH4/MACA RCP8.5 A2')
+setwd('~/Visualizing-Butterfly-Emergence')
 
 allData <- read.csv(file="Output.ALL.PresenceAbsence.RCP8.5.csv")
 
