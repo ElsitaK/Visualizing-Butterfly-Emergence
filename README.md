@@ -6,7 +6,7 @@ Elsita Kiekebusch
 Extracting First Emergence Date
 -------------------------------
 
-Random Forest has predicted daily butterfly presence and absence for 20 General Circulation Models (GCMs) paramaterized by the RCP 8.5 emissions scenario (aka the "business as usual scenario"). These are collected in the file "Output.All.PresenceAbsences.RCP8.5.csv" with each column representing 1 GCM. Here we extract the first date of butterfly emergence for each year.
+Random Forest has predicted daily butterfly presence and absence for 20 General Circulation Models (GCMs) paramaterized by the RCP 8.5 emissions scenario (aka the "business as usual" scenario). These are collected in the file "Output.All.PresenceAbsences.RCP8.5.csv" with each column representing 1 GCM. Here we extract the first date of butterfly emergence for each year.
 
 ``` r
 setwd('~/Visualizing-Butterfly-Emergence')
