@@ -76,7 +76,7 @@ emerge %>% tidyr::gather("id", "Ordinal.Date", 2:21) %>%
 Mean Emergence
 --------------
 
-Calculate the mean emergence date across the 20 GCMs as well as 95% Confidence Intervals, and display the plot. Confidence intervals can be displayed as separate lines (first figure) or as shading (second figure).
+Calculate the mean emergence date across the 20 GCMs as well as 5th-95th percentile range, and display the plot. The range is displayed as separate lines (first figure) or as shading (second figure).
 
 ``` r
 #get mean
